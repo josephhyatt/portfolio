@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="discription" content="Web Developer Portfolio">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Joseph Hyatt</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand visible-xs" href="home">Joseph Hyatt</a>
+        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="https://medium.com/@josephhyatt" target="_blank">Blog</a></li>
+          <li><a href="https://wiki.josephhyatt.com" target="_blank">Wiki</a></li>
+          <li><a href="https://josephhyatt-resume.herokuapp.com/" target="_blank">Résumé</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="navbar-icon"><a href="https://github.com/josephhyatt" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.linkedin.com/in/josephnhyatt/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="navbar-icon"><a href="https://twitter.com/josephnhyatt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.instagram.com/josephnhyatt/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li class="navbar-icon"><a href="https://www.youtube.com/channel/UCcNRAL5h4PUdau3USJzEvRA/featured?disable_polymer=1"
+              target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li class="navbar-icon"><a href="mailto:josephnhyatt@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="item">
+      <h1><a href="projects">Projects</a></h1>
+      <h5>Joseph Hyatt</h5>
+    </div>
+    <br>
+    <div class="text-justify">
+      <p>I'm currently developing a <a href="https://github.com/josephhyatt/discussion_board" target="_blank">Discussion
+          Board Application</a> for the <a href="https://learn.co/" target="_blank">Flatiron School</a>. I have a <a href="https://medium.com/@josephhyatt" target="_blank">Blog</a>
+        where I discuss challenges I have run into and how I was able to overcome those challenges.
+        I'm constantly adding to my <a href="https://wiki.josephhyatt.com/" target="_blank">Wiki</a> where I share the
+        resources I've found useful on a variety of subjects.
+      </p>
+
+      <br>
+
+      <p>My current and past projects include:</p>
+
+
+      <h2><a href="https://github.com/josephhyatt/discussion_board" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+        Discussion Board</h2>
+      <p><a href="https://github.com/josephhyatt/discussion_board" target="_blank">Discussion Board</a> is an <a href="https://en.wikipedia.org/wiki/Open-source_software" target="_blank">open
+          source</a> website I'm creating for <a href="https://learn.co/" target="_blank">The Flatiron School</a>.
+        I'm using <a href="https://guides.rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript</a>,
+        <a href="https://jquery.com/" target="_blank">jQuery</a>,
+        and <a href="https://bulma.io/" target="_blank">Bulma</a>
+        to create this project.</p>
+      <ul>
+        <li>Using a <a href="https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association" target="_blank">has_many
+            :through</a> relationship to create a join table that allows a user to find a
+          discussion and discussion to find a user. A <a href="https://guides.rubyonrails.org/association_basics.html#the-has-many-through-association" target="_blank">has_many
+            :through</a> relationship makes everything available,
+          such as <a href="#">categories</a>, or in this case <a href="#">discussions</a>.</li>
+        <li><a href="https://rubygems.org/gems/gravatar_image_tag" target="_blank">Gravatar_image_tag</a> - Shows a users <a href="https://rubygems.org/gems/gravatar_image_tag" target="_blank">gravatar
+            image</a> if they're signed in.</li>
+        <li><a href="https://rubygems.org/gems/rolify" target="_blank">Rolify</a> and <a href="https://rubygems.org/gems/cancancan" target="_blank">Cancancan</a>
+          - Helps with an admins
+          user role by hooking into <a href="https://rubygems.org/gems/devise" target="_blank">devise</a> to make
+          the admin user role.</li>
+        <li><a href="https://rubygems.org/gems/friendly_id" target="_blank">Friendly_id</a> - Helps create slugs (a slug is a name
+          given to a URL of a page) for our
+          URL's, and is responsible for making the URL an
+          actual slug rather than numbers. Makes it easier to remember and when you share it with someone.</li>
+        <li> <a href="https://bulma.io/" target="_blank">Bulma</a> - A <a href="https://css-tricks.com/" target="_blank">CSS</a> framework which
+          utilizes <a href="https://sass-lang.com/" target="_blank">Sass</a>.</li>
+      </ul>
+
+      <h2><a href="https://github.com/josephhyatt/dev_hire" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+        Dev Hire</h2>
+      <p><a href="https://dev-hire.herokuapp.com/" target="_blank">Dev Hire</a> is a website I created for <a href="https://josephhyatt.com/" target="_blank">my portfolio site</a> as a way for a client to setup an appointment with me to collaborate over some code, or to hire me for some freelance work.
+        I'm using <a href="https://guides.rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript</a>, and <a href="https://tailwindcss.com/docs/what-is-tailwind/" target="_blank">Tailwind CSS</a>
+        to create this project.</p>
+      <ul>
+        <li><a href="https://rubygems.org/gems/stripe" target="_blank">Stripe</a> - To make or receive payments over the internet.</li>
+        <li><a href="https://github.com/ddollar/foreman" target="_blank">Foreman</a> - Allows a user to use multiple procfiles in a <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a> application. <a href="https://github.com/ddollar/foreman" target="_blank">Foreman</a> will startup <a href="https://rubygems.org/gems/redis" target="_blank">Redis</a>, <a href="https://rubygems.org/gems/sidekiq" target="_blank">Sidekiq</a>, and the <a href="https://guides.rubyonrails.org/getting_started.html#starting-up-the-web-server" target="_blank">Rails Server</a> for you.</li>
+        <li> <a href="https://bulma.io/" target="_blank">Tailwind CSS</a> - A <a href="https://tailwindcss.com/docs/what-is-tailwind/" target="_blank">CSS</a> framework which
+          is different from frameworks such as <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> which give the site a different feel.</li>
+        <li> <a href="https://github.com/rails/webpacker" target="_blank">Webpacker</a> - Helps manage app like <a href="https://www.javascript.com/" target="_blank">JavaScript</a> modules in <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>.</li>
+      </ul>
+
+      <h2><a href="https://github.com/josephhyatt/tasky" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+        Tasky</h2>
+      <p>I love to make things that may help others. </p>
+      <p><a href="https://tasky-app.herokuapp.com/" target="_blank">Tasky</a> is a <a href="https://en.wikipedia.org/wiki/Project_management_software" target="_blank">project
+          managing tool</a> that organizes your projects
+        into boards to keep you on track.<a href="https://tasky-app.herokuapp.com/" target="_blank"> Tasky</a>
+        was built with <a href="https://guides.rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript</a>,
+        <a href="https://jquery.com/" target="_blank">jQuery</a>, and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>. Main features
+        of <a href="https://tasky-app.herokuapp.com/" target="_blank">Tasky</a>
+        include:</p>
+      <ul>
+        <li><a href="https://rubygems.org/gems/devise" target="_blank">Devise</a> - Manages user authentication.</li>
+        <li><a href="https://rubygems.org/gems/omniauth-facebook" target="_blank">Omniauth</a> - Allowing users to login/signup using
+          their Facebook account.</li>
+        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - For developing responsive, mobile-first projects.</li>
+        <li><a href="https://rubygems.org/gems/redcarpet" target="_blank">Redcarpet</a> - A fast, safe and extensible Markdown to (X)HTML parser.</li>
+        <li><a href="https://vincentgarreau.com/particles.js/" target="_blank">Particle.js</a> - A lightweight JavaScript library for
+          creating particles.</li>
+        <li><a href="https://rubygems.org/gems/friendly_id" target="_blank">Friendly_id</a> - The "Swiss Army bulldozer" of slugging
+          and permalink plugins for Active Record. It lets you create pretty URLs and work
+          with human-friendly strings as if they were numeric id's.</li>
+        <li><a href="https://fontawesome.com/" target="_blank">Font Awesome Icons</a> - Popular icon set and toolkit.</li>
+        <li><a href="https://rubygems.org/gems/custom_error_message" target="_blank">Custom Error Messages</a> - Gives the ability to
+          have custom validation error messages prefixed with the attribute name.</li>
+      </ul>
+
+      <h2><a href="https://github.com/josephhyatt/travel-site" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+        Travel Site</h2>
+      <p>I built a <a href="https://josephhyatt.github.io/travel-site/" target="_blank">travel site</a> for a travel company</a>, and
+        this is the template.</p>
+      <ul>
+        <li>Using <a href="https://nodejs.org/en/" target="_blank">Node.js</a>, <a href="https://gulpjs.com/" target="_blank">Gulp</a>, and <a href="https://www.npmjs.com/" target="_blank">npm</a>
+          to help with automating
+          tasks.</li>
+        <li><a href="" target="_blank">Mobile First</a> - Users won't have to download any extra data they don't require to view
+          the site.</li>
+        <li><a href="https://github.com/aFarkas/lazysizes" target="_blank">Lazysizes</a> - Lazy loads images (including responsive
+          images (picture/srcset)), iframes and scripts.</li>
+        <li><a href="http://getbem.com/" target="_blank">B.E.M</a> - Block Element Modifier that helps you to achieve
+          reusable components and code sharing in the front-end.</li>
+      </ul>
+
+      <h2><a href="https://github.com/josephhyatt/RailsPortfolio" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+        Rails Portfolio</h2>
+      <p>This is a past <a href="http://jnh-portfolio.herokuapp.com/" target="_blank">Portfolio</a> of mine built using <a href="https://guides.rubyonrails.org/" target="_blank">Ruby on
+          Rails</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript</a>,
+        <a href="https://jquery.com/" target="_blank">jQuery</a>, and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.
+        I added a video
+        background, full syntax highlighting, and font awesome icons. Being my previous portfolio I have uploaded it to
+        <a href="https://www.heroku.com/" target="_blank">Heroku</a>.</p>
+      <ul>
+        <li><a href="#">License Up</a> - Create a license quickly for a given name.</li>
+        <li><a href="https://rubygems.org/gems/devise" target="_blank">Devise</a> - Manages user authentication.</li>
+        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - For developing responsive, mobile-first projects.</li>
+        <li><a href="https://rubygems.org/gems/redcarpet" target="_blank">Markdown Syntax</a> - A plain text formatting syntax aimed at making writing for the internet
+          easier.</li>
+      </ul>
+
+
+      <h2><a href="https://github.com/josephhyatt/BeerMe-cli-app" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+        BeerMe</h2>
+      <p>A <a href="https://github.com/agarrharr/awesome-cli-apps" target="_blank">command line interface</a> application that scrapes
+        data from Beer Advocate’s Top 250 Beers List and prints out the top 10 beers to the console.</p>
+      <ul>
+        <li>Users may select a beer by inputting the number on the list to find out more details.</li>
+        <li>Beer details include a beer origin, beer styles, alcohol percentage, best seasons to drink selected beer.</li>
+        <li>Results present each beer in a list, along with the corresponding information about chosen beer.</li>
+      </ul>
+      <!--
+        <h2><a href="https://github.com/josephhyatt/wack-a-trump" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+          Wack-a-Trump</h2>
+        <p>I don't know about you but some of the things Donald Trump says and does is just so incredibly unintelligent
+          that it
+          gets under
+          my skin. <a href="https://josephhyatt.github.io/wack-a-trump/" target="_blank">Wack-a-Trump</a> is a wack-a-mole type game,
+          where I added Donald Trumps image.</p>
+        <ul>
+          <li>Built using <a href="https://www.javascript.com/" target="_blank">JavaScript</a>.</li>
+          <li>Records number of times a user clicks on Trump's image while he is popped-up.</li>
+          <li>This app is meant to release pent up anger on Donald Trumps face. lol.</li>
+        </ul>
+      -->
+      <h2><a href="https://github.com/josephhyatt/RailsPortfolio" target="_blank"><i class="fa fa-github icon-rotate"></i></a>
+        Computer Science</h2>
+      <p>I'm a college student working towards a <a href="https://en.wikipedia.org/wiki/Bachelor_of_Computer_Science"
+          target="_blank">Bachelor's
+          in Computer Science</a>. I'm
+        currently working with <a href="https://www.cplusplus.com/" target="_blank">C++</a>, and upload
+        my past assignments
+        to <a href="https://github.com/josephhyatt" target="_blank">github</a> once it's complete and has received
+        feedback from my
+        professor. I also plan on
+        writing a <a href="https://medium.com/@josephhyatt" target="_blank">Blog</a> about my progression, stay tuned.</p>
+
+
+      <h2><a href="https://wiki.josephhyatt.com/" target="_blank"><i class="fa fa-wikipedia-w icon-rotate"></i></a>
+        iki Page</h2>
+      <p>The internet is a big place with an endless amount of information to sift through. I created <a href="https://wiki.josephhyatt.com/"
+          target="_blank">wiki.josephhyatt.com</a> to
+        keep resources that I found to be useful in a organized area that I can use to reference from time to time.
+        It's an
+        ongoing process
+        that gets
+        updated almost daily. Feel free <a href="https://github.com/josephhyatt/knowledge" target="_blank">contribute</a> to
+        it.
+
+        <h2>Other Things</h2>
+        <p>More to come.. </p>
+    </div>
+  </main>
+
+  <br>
+
+  <footer>
+    <div id="form-container" class="icon fa fa-envelope">
+      <span id="form-close" class="icon fa fa-close"></span>
+      <div id="form-content">
+        <div id="form-head">
+          <h1 class="pre">Contact Me</h1>
+          <p class="pre">Let's Build Something Together</p>
+          <h1 class="post">Thanks!</h1>
+          <p class="post">I'll be in touch ASAP</p>
+        </div>
+        <form action="https://formspree.io/josephnhyatt@gmail.com" method="POST">
+          <input class="input name" name="name" placeholder="Your Name">
+          <input class="input email" name="email" placeholder="Your Email">
+          <select class="input select" name="subject">
+            <option>General Question</option>
+            <option>Job Opportunity</option>
+            <option>Other</option>
+          </select>
+          <textarea class="input message" name="message" placeholder="Talk to me"></textarea>
+          <div class="status"></div>
+          <input type="submit" class="input submit">
+        </form>
+      </div>
+    </div>
+
+    <p class="copyright text-muted">©️ Joseph Hyatt 2019</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
